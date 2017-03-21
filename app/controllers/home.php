@@ -6,5 +6,4 @@ class Home extends Controller
     {     
         $this->view('home/index', ['name' => $name]);
     }
-
 }
