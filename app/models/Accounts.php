@@ -2,10 +2,11 @@
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class User extends Eloquent
+class Accounts extends Eloquent
 {
     public $name;
     
     public $timestamps = [];
-    protected $fillable = ['username', 'email'];
+    protected $fillable = ['name', 'login','sex','email','password'];
+
 }
