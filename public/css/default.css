@@ -1,0 +1,23 @@
+body
+{
+	color: white;
+	font-size: 16px;
+}
+
+#header
+{
+	background: black;
+	padding: 50px;
+}
+
+#content
+{
+	background: red;
+	padding: 50px;
+}
+
+#footer
+{
+	background: gold;
+	padding: 50px;
+}

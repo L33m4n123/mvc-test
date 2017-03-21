@@ -15,7 +15,9 @@ class Controller
     {
         if (file_exists('../app/views/'.$view.'.php')) {
             //$this->model = $model;
+            require_once ('../app/views/header.php');
             require_once ('../app/views/'.$view.'.php');
+            require_once ('../app/views/footer.php');
             $view = explode('/', $view);
             new $view[0];
         }

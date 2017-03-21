@@ -1,6 +1,6 @@
 Options -MultiViews
 RewriteEngine On
-
+DirectoryIndex index.php
 RewriteBase /public
 
 RewriteCond %{REQUEST_FILENAME} !-d
