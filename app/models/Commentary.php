@@ -22,4 +22,14 @@ class Commentary extends Eloquent
 	 * 							more about the emotes itself
 	 * 
 	 */ 
+
+	public static function viewCommentary(string $section, int $offset = 0, int $limit = 20) : array
+	{
+		return Commentary::where('section', $section)
+		->leftJoin('accounts', 'accounts.acctid', '=', 'commentary.commentid')
+		->orderBy('created_at', DESC)
+		->offset($offset)
+		->limit($limit)
+		->get();
+	}
 }
