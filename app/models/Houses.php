@@ -4,6 +4,9 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Houses extends Eloquent
 {
+	protected $timestamps = [];
+	protected $fillable = ['housename', 'location', 'housedesc'];
+	
 	/*
 	 * A model to represent the houses.
 	 * Houses are private places where users have full control
@@ -22,4 +25,6 @@ class Houses extends Eloquent
 	 * 							what location
 	 * housedesc (varchar)	- description of the house
 	 */
+
+
 }
